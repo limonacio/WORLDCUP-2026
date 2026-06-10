@@ -7,6 +7,7 @@ import Groups from './pages/Groups'
 import Matches from './pages/Matches'
 import Standings from './pages/Standings'
 import Knockout from './pages/Knockout'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/standings" element={<Standings />} />
           <Route path="/knockout" element={<Knockout />} />
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   )

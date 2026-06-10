@@ -1,5 +1,5 @@
 export const matches = [
-  // 11 DE JUNIO
+  // JUNE 11
   {
     home: 'Mexico',
     away: 'South Africa',
@@ -14,8 +14,8 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Republica de Corea',
-    away: 'Republica Checa',
+    home: 'South Korea',
+    away: 'Czech Republic',
     homeFlag: 'kr',
     awayFlag: 'cz',
     group: 'A',
@@ -26,7 +26,7 @@ export const matches = [
     stadium: 'Akron',
     status: 'Scheduled',
   },
-  // 12 DE JUNIO
+  // JUNE 12
   {
     home: 'Canada',
     away: 'Bosnia & Herzegovina',
@@ -41,7 +41,7 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Estados Unidos',
+    home: 'United States',
     away: 'Paraguay',
     homeFlag: 'us',
     awayFlag: 'py',
@@ -53,10 +53,10 @@ export const matches = [
     stadium: 'SoFi Stadium',
     status: 'Scheduled',
   },
-  // 13 DE JUNIO
+  // JUNE 13
   {
-    home: 'Catar',
-    away: 'Suiza',
+    home: 'Qatar',
+    away: 'Switzerland',
     homeFlag: 'qa',
     awayFlag: 'ch',
     group: 'B',
@@ -68,8 +68,8 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Brasil',
-    away: 'Marruecos',
+    home: 'Brazil',
+    away: 'Morocco',
     homeFlag: 'br',
     awayFlag: 'ma',
     group: 'C',
@@ -82,7 +82,7 @@ export const matches = [
   },
   {
     home: 'Haiti',
-    away: 'Escocia',
+    away: 'Scotland',
     homeFlag: 'ht',
     awayFlag: 'gb-sct',
     group: 'C',
@@ -95,7 +95,7 @@ export const matches = [
   },
   {
     home: 'Australia',
-    away: 'Turquia',
+    away: 'Turkiye',
     homeFlag: 'au',
     awayFlag: 'tr',
     group: 'D',
@@ -106,10 +106,10 @@ export const matches = [
     stadium: 'BC Place',
     status: 'Scheduled',
   },
-  // 14 DE JUNIO
+  // JUNE 14
   {
-    home: 'Alemania',
-    away: 'Curazao',
+    home: 'Germany',
+    away: 'Curacao',
     homeFlag: 'de',
     awayFlag: 'cw',
     group: 'E',
@@ -121,8 +121,8 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Paises Bajos',
-    away: 'Japon',
+    home: 'Netherlands',
+    away: 'Japan',
     homeFlag: 'nl',
     awayFlag: 'jp',
     group: 'F',
@@ -134,7 +134,7 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Costa de Marfil',
+    home: 'Ivory Coast',
     away: 'Ecuador',
     homeFlag: 'ci',
     awayFlag: 'ec',
@@ -142,13 +142,13 @@ export const matches = [
     date: '14 Jun 2026',
     kickoffLocal: '7:00 PM',
     kickoffArgentina: '8:00 PM',
-    city: 'Filadelfia',
+    city: 'Philadelphia',
     stadium: 'Lincoln Financial Field',
     status: 'Scheduled',
   },
   {
-    home: 'Suecia',
-    away: 'Tunez',
+    home: 'Sweden',
+    away: 'Tunisia',
     homeFlag: 'se',
     awayFlag: 'tn',
     group: 'F',
@@ -159,10 +159,10 @@ export const matches = [
     stadium: 'BBVA',
     status: 'Scheduled',
   },
-  // 15 DE JUNIO
+  // JUNE 15
   {
-    home: 'España',
-    away: 'Cabo Verde',
+    home: 'Spain',
+    away: 'Cape Verde',
     homeFlag: 'es',
     awayFlag: 'cv',
     group: 'H',
@@ -174,8 +174,8 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Belgica',
-    away: 'Egipto',
+    home: 'Belgium',
+    away: 'Egypt',
     homeFlag: 'be',
     awayFlag: 'eg',
     group: 'G',
@@ -187,7 +187,7 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Arabia Saudita',
+    home: 'Saudi Arabia',
     away: 'Uruguay',
     homeFlag: 'sa',
     awayFlag: 'uy',
@@ -201,7 +201,7 @@ export const matches = [
   },
   {
     home: 'Iran',
-    away: 'Nueva Zelanda',
+    away: 'New Zealand',
     homeFlag: 'ir',
     awayFlag: 'nz',
     group: 'G',
@@ -212,9 +212,9 @@ export const matches = [
     stadium: 'SoFi Stadium',
     status: 'Scheduled',
   },
-  // 16 DE JUNIO
+  // JUNE 16
   {
-    home: 'Francia',
+    home: 'France',
     away: 'Senegal',
     homeFlag: 'fr',
     awayFlag: 'sn',
@@ -227,8 +227,8 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Irak',
-    away: 'Noruega',
+    home: 'Iraq',
+    away: 'Norway',
     homeFlag: 'iq',
     awayFlag: 'no',
     group: 'I',
@@ -241,7 +241,7 @@ export const matches = [
   },
   {
     home: 'Argentina',
-    away: 'Argelia',
+    away: 'Algeria',
     homeFlag: 'ar',
     awayFlag: 'dz',
     group: 'J',
@@ -254,7 +254,7 @@ export const matches = [
   },
   {
     home: 'Austria',
-    away: 'Jordania',
+    away: 'Jordan',
     homeFlag: 'at',
     awayFlag: 'jo',
     group: 'J',
@@ -265,10 +265,10 @@ export const matches = [
     stadium: 'Levi’s Stadium',
     status: 'Scheduled',
   },
-  // 17 DE JUNIO
+  // JUNE 17
   {
     home: 'Portugal',
-    away: 'RD Congo',
+    away: 'DR Congo',
     homeFlag: 'pt',
     awayFlag: 'cd',
     group: 'K',
@@ -280,8 +280,8 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Inglaterra',
-    away: 'Croacia',
+    home: 'England',
+    away: 'Croatia',
     homeFlag: 'gb-eng',
     awayFlag: 'hr',
     group: 'L',
@@ -294,7 +294,7 @@ export const matches = [
   },
   {
     home: 'Ghana',
-    away: 'Panamá',
+    away: 'Panama',
     homeFlag: 'gh',
     awayFlag: 'pa',
     group: 'L',
@@ -318,10 +318,10 @@ export const matches = [
     stadium: 'Ciudad de Mexico',
     status: 'Scheduled',
   },
-  // 18 DE JUNIO
+  // JUNE 18
   {
-    home: 'Republica Checa',
-    away: 'Sudafrica',
+    home: 'Czech Republic',
+    away: 'South Africa',
     homeFlag: 'cz',
     awayFlag: 'za',
     group: 'A',
@@ -333,7 +333,7 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Suiza',
+    home: 'Switzerland',
     away: 'Bosnia & Herzegovina',
     homeFlag: 'ch',
     awayFlag: 'ba',
@@ -347,7 +347,7 @@ export const matches = [
   },
   {
     home: 'Canada',
-    away: 'Catar',
+    away: 'Qatar',
     homeFlag: 'ca',
     awayFlag: 'qa',
     group: 'B',
@@ -360,7 +360,7 @@ export const matches = [
   },
   {
     home: 'Mexico',
-    away: 'Republica de Corea',
+    away: 'South Korea',
     homeFlag: 'mx',
     awayFlag: 'kr',
     group: 'A',
@@ -371,9 +371,9 @@ export const matches = [
     stadium: 'Akron',
     status: 'Scheduled',
   },
-  // 19 DE JUNIO
+  // JUNE 19
   {
-    home: 'Estados Unidos',
+    home: 'United States',
     away: 'Australia',
     homeFlag: 'us',
     awayFlag: 'au',
@@ -386,8 +386,8 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Escocia',
-    away: 'Marruecos',
+    home: 'Scotland',
+    away: 'Morocco',
     homeFlag: 'gb-sct',
     awayFlag: 'ma',
     group: 'C',
@@ -399,7 +399,7 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Brasil',
+    home: 'Brazil',
     away: 'Haiti',
     homeFlag: 'br',
     awayFlag: 'ht',
@@ -407,12 +407,12 @@ export const matches = [
     date: '19 Jun 2026',
     kickoffLocal: '9:00 PM',
     kickoffArgentina: '10:00 PM',
-    city: 'Filadelfia',
+    city: 'Philadelphia',
     stadium: 'Lincoln Financial Field',
     status: 'Scheduled',
   },
   {
-    home: 'Turquia',
+    home: 'Turkiye',
     away: 'Paraguay',
     homeFlag: 'tr',
     awayFlag: 'py',
@@ -424,10 +424,10 @@ export const matches = [
     stadium: 'Levi’s Stadium',
     status: 'Scheduled',
   },
-  // 20 DE JUNIO
+  // JUNE 20
   {
-    home: 'Paises Bajos',
-    away: 'Suecia',
+    home: 'Netherlands',
+    away: 'Sweden',
     homeFlag: 'nl',
     awayFlag: 'se',
     group: 'F',
@@ -439,8 +439,8 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Alemania',
-    away: 'Costa de Marfil',
+    home: 'Germany',
+    away: 'Ivory Coast',
     homeFlag: 'de',
     awayFlag: 'ci',
     group: 'E',
@@ -453,7 +453,7 @@ export const matches = [
   },
   {
     home: 'Ecuador',
-    away: 'Curazao',
+    away: 'Curacao',
     homeFlag: 'ec',
     awayFlag: 'cw',
     group: 'E',
@@ -465,8 +465,8 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Tunez',
-    away: 'Japon',
+    home: 'Tunisia',
+    away: 'Japan',
     homeFlag: 'tn',
     awayFlag: 'jp',
     group: 'F',
@@ -477,10 +477,10 @@ export const matches = [
     stadium: 'BBVA',
     status: 'Scheduled',
   },
-  // 21 DE JUNIO
+  // JUNE 21
   {
-    home: 'España',
-    away: 'Arabia Saudita',
+    home: 'Spain',
+    away: 'Saudi Arabia',
     homeFlag: 'es',
     awayFlag: 'sa',
     group: 'H',
@@ -492,7 +492,7 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Belgica',
+    home: 'Belgium',
     away: 'Iran',
     homeFlag: 'be',
     awayFlag: 'ir',
@@ -506,7 +506,7 @@ export const matches = [
   },
   {
     home: 'Uruguay',
-    away: 'Cabo Verde',
+    away: 'Cape Verde',
     homeFlag: 'uy',
     awayFlag: 'cv',
     group: 'H',
@@ -518,8 +518,8 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Nueva Zelanda',
-    away: 'Egipto',
+    home: 'New Zealand',
+    away: 'Egypt',
     homeFlag: 'nz',
     awayFlag: 'eg',
     group: 'G',
@@ -530,7 +530,7 @@ export const matches = [
     stadium: 'BC Place',
     status: 'Scheduled',
   },
-  // 22 DE JUNIO
+  // JUNE 22
   {
     home: 'Argentina',
     away: 'Austria',
@@ -545,20 +545,20 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Francia',
-    away: 'Irak',
+    home: 'France',
+    away: 'Iraq',
     homeFlag: 'fr',
     awayFlag: 'iq',
     group: 'I',
     date: '22 Jun 2026',
     kickoffLocal: '5:00 PM',
     kickoffArgentina: '6:00 PM',
-    city: 'Filadelfia',
+    city: 'Philadelphia',
     stadium: 'Lincoln Financial Field',
     status: 'Scheduled',
   },
   {
-    home: 'Noruega',
+    home: 'Norway',
     away: 'Senegal',
     homeFlag: 'no',
     awayFlag: 'sn',
@@ -571,8 +571,8 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Jordania',
-    away: 'Argelia',
+    home: 'Jordan',
+    away: 'Algeria',
     homeFlag: 'jo',
     awayFlag: 'dz',
     group: 'J',
@@ -583,7 +583,7 @@ export const matches = [
     stadium: 'Levi’s Stadium',
     status: 'Scheduled',
   },
-  // 23 DE JUNIO
+  // JUNE 23
   {
     home: 'Portugal',
     away: 'Uzbekistan',
@@ -598,7 +598,7 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Inglaterra',
+    home: 'England',
     away: 'Ghana',
     homeFlag: 'gb-eng',
     awayFlag: 'gh',
@@ -611,8 +611,8 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Panamá',
-    away: 'Croacia',
+    home: 'Panama',
+    away: 'Croatia',
     homeFlag: 'pa',
     awayFlag: 'hr',
     group: 'L',
@@ -625,7 +625,7 @@ export const matches = [
   },
   {
     home: 'Colombia',
-    away: 'RD Congo',
+    away: 'DR Congo',
     homeFlag: 'co',
     awayFlag: 'cd',
     group: 'K',
@@ -636,9 +636,9 @@ export const matches = [
     stadium: 'Akron',
     status: 'Scheduled',
   },
-  // 24 DE JUNIO
+  // JUNE 24
   {
-    home: 'Suiza',
+    home: 'Switzerland',
     away: 'Canada',
     homeFlag: 'ch',
     awayFlag: 'ca',
@@ -652,7 +652,7 @@ export const matches = [
   },
   {
     home: 'Bosnia & Herzegovina',
-    away: 'Catar',
+    away: 'Qatar',
     homeFlag: 'ba',
     awayFlag: 'qa',
     group: 'B',
@@ -664,8 +664,8 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Escocia',
-    away: 'Brasil',
+    home: 'Scotland',
+    away: 'Brazil',
     homeFlag: 'gb-sct',
     awayFlag: 'br',
     group: 'C',
@@ -677,7 +677,7 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Marruecos',
+    home: 'Morocco',
     away: 'Haiti',
     homeFlag: 'ma',
     awayFlag: 'ht',
@@ -690,7 +690,7 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Republica Checa',
+    home: 'Czech Republic',
     away: 'Mexico',
     homeFlag: 'cz',
     awayFlag: 'mx',
@@ -703,8 +703,8 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Sudafrica',
-    away: 'Republica de Corea',
+    home: 'South Africa',
+    away: 'South Korea',
     homeFlag: 'za',
     awayFlag: 'kr',
     group: 'A',
@@ -715,23 +715,23 @@ export const matches = [
     stadium: 'BBVA',
     status: 'Scheduled',
   },
-  // 25 DE JUNIO
+  // JUNE 25
   {
-    home: 'Curazao',
-    away: 'Costa de Marfil',
+    home: 'Curacao',
+    away: 'Ivory Coast',
     homeFlag: 'cw',
     awayFlag: 'ci',
     group: 'E',
     date: '25 Jun 2026',
     kickoffLocal: '4:00 PM',
     kickoffArgentina: '5:00 PM',
-    city: 'Filadelfia',
+    city: 'Philadelphia',
     stadium: 'Lincoln Financial Field',
     status: 'Scheduled',
   },
   {
     home: 'Ecuador',
-    away: 'Alemania',
+    away: 'Germany',
     homeFlag: 'ec',
     awayFlag: 'de',
     group: 'E',
@@ -743,8 +743,8 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Japon',
-    away: 'Suecia',
+    home: 'Japan',
+    away: 'Sweden',
     homeFlag: 'jp',
     awayFlag: 'se',
     group: 'F',
@@ -756,8 +756,8 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Tunez',
-    away: 'Paises Bajos',
+    home: 'Tunisia',
+    away: 'Netherlands',
     homeFlag: 'tn',
     awayFlag: 'nl',
     group: 'F',
@@ -769,8 +769,8 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Turquia',
-    away: 'Estados Unidos',
+    home: 'Turkiye',
+    away: 'United States',
     homeFlag: 'tr',
     awayFlag: 'us',
     group: 'D',
@@ -794,10 +794,10 @@ export const matches = [
     stadium: 'Levi’s Stadium',
     status: 'Scheduled',
   },
-  // 26 DE JUNIO
+  // JUNE 26
   {
-    home: 'Noruega',
-    away: 'Francia',
+    home: 'Norway',
+    away: 'France',
     homeFlag: 'no',
     awayFlag: 'fr',
     group: 'I',
@@ -810,7 +810,7 @@ export const matches = [
   },
   {
     home: 'Senegal',
-    away: 'Irak',
+    away: 'Iraq',
     homeFlag: 'sn',
     awayFlag: 'iq',
     group: 'I',
@@ -822,8 +822,8 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Cabo Verde',
-    away: 'Arabia Saudita',
+    home: 'Cape Verde',
+    away: 'Saudi Arabia',
     homeFlag: 'cv',
     awayFlag: 'sa',
     group: 'H',
@@ -836,7 +836,7 @@ export const matches = [
   },
   {
     home: 'Uruguay',
-    away: 'España',
+    away: 'Spain',
     homeFlag: 'uy',
     awayFlag: 'es',
     group: 'H',
@@ -848,7 +848,7 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Egipto',
+    home: 'Egypt',
     away: 'Iran',
     homeFlag: 'eg',
     awayFlag: 'ir',
@@ -861,8 +861,8 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Nueva Zelanda',
-    away: 'Belgica',
+    home: 'New Zealand',
+    away: 'Belgium',
     homeFlag: 'nz',
     awayFlag: 'be',
     group: 'G',
@@ -873,10 +873,10 @@ export const matches = [
     stadium: 'BC Place',
     status: 'Scheduled',
   },
-  // 27 DE JUNIO
+  // JUNE 27
   {
-    home: 'Panamá',
-    away: 'Inglaterra',
+    home: 'Panama',
+    away: 'England',
     homeFlag: 'pa',
     awayFlag: 'gb-eng',
     group: 'L',
@@ -888,7 +888,7 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Croacia',
+    home: 'Croatia',
     away: 'Ghana',
     homeFlag: 'hr',
     awayFlag: 'gh',
@@ -896,7 +896,7 @@ export const matches = [
     date: '27 Jun 2026',
     kickoffLocal: '5:00 PM',
     kickoffArgentina: '6:00 PM',
-    city: 'Filadelfia',
+    city: 'Philadelphia',
     stadium: 'Lincoln Financial Field',
     status: 'Scheduled',
   },
@@ -914,7 +914,7 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'RD Congo',
+    home: 'DR Congo',
     away: 'Uzbekistan',
     homeFlag: 'cd',
     awayFlag: 'uz',
@@ -927,7 +927,7 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Argelia',
+    home: 'Algeria',
     away: 'Austria',
     homeFlag: 'dz',
     awayFlag: 'at',
@@ -940,7 +940,7 @@ export const matches = [
     status: 'Scheduled',
   },
   {
-    home: 'Jordania',
+    home: 'Jordan',
     away: 'Argentina',
     homeFlag: 'jo',
     awayFlag: 'ar',

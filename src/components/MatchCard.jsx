@@ -22,12 +22,12 @@ function MatchCard({ match }) {
       </div>
 
       {/* PARTIDO */}
-      <div className="px-6 py-6">
+      <div className="px-6 py-8">
 
-        <div className="flex items-center justify-center gap-8">
+        <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-4">
 
           {/* LOCAL */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center justify-end gap-3">
 
             <img
               src={`https://flagcdn.com/w40/${match.homeFlag}.png`}
@@ -35,19 +35,19 @@ function MatchCard({ match }) {
               className="w-8 h-6 rounded-sm"
             />
 
-            <span className="font-bold text-2xl">
+            <span className="font-bold text-2xl text-right">
               {match.home}
             </span>
 
           </div>
 
           {/* VS */}
-          <div className="text-cyan-400 font-bold text-xl">
+          <div className="text-cyan-400 font-bold text-xl px-2">
             VS
           </div>
 
           {/* VISITANTE */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center justify-start gap-3">
 
             <img
               src={`https://flagcdn.com/w40/${match.awayFlag}.png`}
@@ -55,7 +55,7 @@ function MatchCard({ match }) {
               className="w-8 h-6 rounded-sm"
             />
 
-            <span className="font-bold text-2xl">
+            <span className="font-bold text-2xl text-left">
               {match.away}
             </span>
 
@@ -63,7 +63,7 @@ function MatchCard({ match }) {
 
         </div>
 
-        <div className="mt-5 text-center text-slate-400">
+        <div className="mt-6 text-center text-slate-400">
           📍 {match.city}
         </div>
 
