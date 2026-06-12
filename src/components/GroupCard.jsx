@@ -1,85 +1,79 @@
-import { flags } from '../data/flags'
-
 function GroupCard({ group }) {
   return (
-    <div className="bg-slate-800 rounded-xl overflow-hidden shadow-lg border border-slate-700">
-      <div className="bg-cyan-500 text-black font-bold text-center py-3">
-        Grupo {group.group}
+    <div
+      className="
+        bg-slate-900/70
+        border
+        border-cyan-500/30
+        rounded-2xl
+        p-6
+        backdrop-blur-sm
+      "
+    >
+      <h2 className="text-cyan-400 text-4xl font-bold mb-6">
+        Group {group.group}
+      </h2>
+
+      <div className="space-y-4">
+
+        {group.teams.map((team) => (
+
+          <div
+            key={team.name}
+            className="
+              flex
+              items-center
+              gap-4
+              bg-slate-800/50
+              rounded-xl
+              p-4
+            "
+          >
+
+            <img
+              src={`https://flagcdn.com/${team.code}.svg`}
+              alt={team.name}
+              className="w-10"
+            />
+
+            <span className="text-xl font-semibold">
+              {team.name}
+            </span>
+
+          </div>
+
+        ))}
+
       </div>
 
-      <table className="w-full text-sm">
-        <thead className="bg-slate-900">
-          <tr>
-            <th className="p-2">#</th>
-            <th className="p-2 text-left">Equipo</th>
-            <th className="p-2">Pts</th>
-            <th className="p-2">PJ</th>
-            <th className="p-2">PG</th>
-            <th className="p-2">PE</th>
-            <th className="p-2">PP</th>
-            <th className="p-2">GF</th>
-            <th className="p-2">GC</th>
-            <th className="p-2">Dif</th>
-          </tr>
-        </thead>
+      {/* HOST CITIES */}
 
-        <tbody>
-          {group.teams.map((team, index) => (
-            <tr
-              key={team.name}
-              className="border-t border-slate-700 hover:bg-slate-700"
-            >
-              <td className="p-2 text-center">
-                {index + 1}
-              </td>
+      <div className="border-t border-slate-700 mt-8 pt-5">
 
-              <td className="p-2">
-                <div className="flex items-center gap-2">
-                 <img
-                  src={`https://flagcdn.com/${team.code}.svg`}
-                  alt={team.name}
-                  width="24"
-                />
+        <div
+          className="
+            text-cyan-400
+            text-sm
+            font-bold
+            tracking-[2px]
+            mb-4
+          "
+        >
+          HOST CITIES
+        </div>
 
-                  <span>{team.name}</span>
-                </div>
-              </td>
+        <div className="space-y-2 text-slate-300">
 
-              <td className="p-2 text-center">
-                {team.points}
-              </td>
+          <div>📍 Mexico City</div>
 
-              <td className="p-2 text-center">
-                {team.played}
-              </td>
+          <div>📍 Guadalajara</div>
 
-              <td className="p-2 text-center">
-                {team.won}
-              </td>
+          <div>📍 Monterrey</div>
 
-              <td className="p-2 text-center">
-                {team.draw}
-              </td>
+        </div>
 
-              <td className="p-2 text-center">
-                {team.lost}
-              </td>
+      </div>
 
-              <td className="p-2 text-center">
-                {team.gf}
-              </td>
-
-              <td className="p-2 text-center">
-                {team.gc}
-              </td>
-
-              <td className="p-2 text-center">
-                {team.diff}
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
     </div>
   )
 }

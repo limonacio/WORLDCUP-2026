@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import logo from '../assets/logo.png'
+import legendarioIcono from '../assets/LEGENDARIOICONO.png'
 
 function Navbar() {
   return (
@@ -21,7 +21,7 @@ function Navbar() {
         }}
       >
         <img
-          src={logo}
+          src={legendarioIcono}
           alt="Z Sports"
           style={{
             width: '34px',
@@ -53,25 +53,22 @@ function Navbar() {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            isActive ? 'text-cyan-400 font-bold' : 'text-white'
-          }
+            isActive
+              ? 'text-cyan-400 font-bold drop-shadow-[0_0_8px_rgba(34,211,238,0.8)] transition-all duration-300'
+              : 'text-white transition-all duration-300 hover:text-cyan-400 hover:drop-shadow-[0_0_8px_rgba(34,211,238,0.8)]'
+          } 
         >
           Home
         </NavLink>
 
-        <NavLink
-          to="/groups"
-          className={({ isActive }) =>
-            isActive ? 'text-cyan-400 font-bold' : 'text-white'
-          }
-        >
-          Groups
-        </NavLink>
+        
 
         <NavLink
           to="/matches"
           className={({ isActive }) =>
-            isActive ? 'text-cyan-400 font-bold' : 'text-white'
+            isActive
+              ? 'text-cyan-400 font-bold drop-shadow-[0_0_8px_rgba(34,211,238,0.8)] transition-all duration-300'
+              : 'text-white transition-all duration-300 hover:text-cyan-400 hover:drop-shadow-[0_0_8px_rgba(34,211,238,0.8)]'
           }
         >
           Matches
@@ -80,7 +77,9 @@ function Navbar() {
         <NavLink
           to="/standings"
           className={({ isActive }) =>
-            isActive ? 'text-cyan-400 font-bold' : 'text-white'
+            isActive
+              ? 'text-cyan-400 font-bold drop-shadow-[0_0_8px_rgba(34,211,238,0.8)] transition-all duration-300'
+              : 'text-white transition-all duration-300 hover:text-cyan-400 hover:drop-shadow-[0_0_8px_rgba(34,211,238,0.8)]'
           }
         >
           Standings
@@ -89,7 +88,9 @@ function Navbar() {
         <NavLink
           to="/knockout"
           className={({ isActive }) =>
-            isActive ? 'text-cyan-400 font-bold' : 'text-white'
+            isActive
+              ? 'text-cyan-400 font-bold drop-shadow-[0_0_8px_rgba(34,211,238,0.8)] transition-all duration-300'
+              : 'text-white transition-all duration-300 hover:text-cyan-400 hover:drop-shadow-[0_0_8px_rgba(34,211,238,0.8)]'
           }
         >
           Knockout
