@@ -10,7 +10,8 @@ import Knockout from './pages/Knockout'
 import Footer from './components/Footer'
 import Teams from './pages/Teams'
 import Hosts from './pages/Hosts'
-
+import ScrollToTop from './components/ScrollToTop'
+import NotFound from './pages/NotFound'
 
 
 function App() {
@@ -27,7 +28,13 @@ function App() {
           <Route path="/knockout" element={<Knockout />} />
           <Route path="/teams" element={<Teams />} />
           <Route path="/hosts" element={<Hosts />} />
+          <Route
+            path="*"
+            element={<NotFound />}
+          />
         </Routes>
+        <ScrollToTop />
+
         <Footer />
       </div>
     </BrowserRouter>

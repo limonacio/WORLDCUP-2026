@@ -35,16 +35,36 @@ function MatchCard({ match }) {
               className="w-8 h-6 rounded-sm"
             />
 
-            <span className="font-bold text-2xl text-right">
+            <span
+              className="
+                font-bold
+                text-base
+                md:text-2xl
+                text-right
+                leading-tight
+                break-words
+                max-w-[90px]
+                md:max-w-none
+              "
+            >
               {match.home}
             </span>
 
           </div>
 
           {/* VS */}
-          <div className="text-cyan-400 font-bold text-xl px-2">
-            VS
-          </div>
+            <div
+              className="
+                text-cyan-400
+                font-bold
+                text-lg
+                md:text-xl
+                px-1
+                md:px-2
+              "
+              >
+              VS
+            </div>
 
           {/* VISITANTE */}
           <div className="flex items-center justify-start gap-3">
@@ -55,7 +75,18 @@ function MatchCard({ match }) {
               className="w-8 h-6 rounded-sm"
             />
 
-            <span className="font-bold text-2xl text-left">
+            <span
+              className="
+                font-bold
+                text-base
+                md:text-2xl
+                text-left
+                leading-tight
+                break-words
+                max-w-[90px]
+                md:max-w-none
+              "
+            >
               {match.away}
             </span>
 

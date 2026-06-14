@@ -6,10 +6,12 @@ function Navbar() {
     <nav
       style={{
         backgroundColor: '#0f172a',
-        padding: '16px 20px',
+        padding: '12px 16px',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
+        flexWrap: 'wrap',
+        gap: '10px',
       }}
     >
       {/* LOGO + TITULO */}
@@ -17,15 +19,16 @@ function Navbar() {
         style={{
           display: 'flex',
           alignItems: 'center',
-          gap: '12px',
+          gap: '8px',
+          flexShrink: 0,
         }}
       >
         <img
           src={legendarioIcono}
           alt="Z Sports"
           style={{
-            width: '34px',
-            height: '34px',
+            width: '28px',
+            height: '28px',
             objectFit: 'contain',
           }}
         />
@@ -34,22 +37,26 @@ function Navbar() {
           style={{
             color: '#38bdf8',
             margin: 0,
-            fontSize: '1.1rem',
+            fontSize: '0.95rem',
             fontWeight: '700',
-            letterSpacing: '2px',
+            letterSpacing: '1px',
+            whiteSpace: 'nowrap',
           }}
         >
-          Z SPORTS
+          ZETA-SPORTS
         </h2>
       </div>
 
       {/* MENU */}
       <div
-        style={{
-          display: 'flex',
-          gap: '20px',
-        }}
-      >
+  style={{
+    display: 'flex',
+    gap: '12px',
+    flexWrap: 'wrap',
+    justifyContent: 'flex-end',
+    fontSize: '0.9rem',
+  }}
+>
         <NavLink
           to="/"
           className={({ isActive }) =>

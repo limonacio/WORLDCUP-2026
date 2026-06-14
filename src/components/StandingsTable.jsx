@@ -13,10 +13,12 @@ function StandingsTable({ group }) {
         Group {group.group}
       </h2>
 
+      {/* CABECERA */}
       <div
         className="
           grid
-          grid-cols-[50px_1fr_60px_60px_60px_60px_60px_60px_60px]
+          grid-cols-[50px_1fr_50px]
+          md:grid-cols-[50px_1fr_60px_60px_60px_60px_60px_60px_60px]
           text-slate-400
           text-xs
           font-bold
@@ -26,12 +28,13 @@ function StandingsTable({ group }) {
         <div>POS</div>
         <div>TEAM</div>
         <div>PTS</div>
-        <div>PJ</div>
-        <div>PG</div>
-        <div>PE</div>
-        <div>PP</div>
-        <div>GF</div>
-        <div>DG</div>
+
+        <div className="hidden md:block">PJ</div>
+        <div className="hidden md:block">PG</div>
+        <div className="hidden md:block">PE</div>
+        <div className="hidden md:block">PP</div>
+        <div className="hidden md:block">GF</div>
+        <div className="hidden md:block">DG</div>
       </div>
 
       {group.teams.map((team, index) => (
@@ -39,7 +42,8 @@ function StandingsTable({ group }) {
           key={team.name}
           className="
             grid
-            grid-cols-[50px_1fr_60px_60px_60px_60px_60px_60px_60px]
+            grid-cols-[50px_1fr_50px]
+            md:grid-cols-[50px_1fr_60px_60px_60px_60px_60px_60px_60px]
             items-center
             bg-slate-800/50
             rounded-xl
@@ -68,25 +72,31 @@ function StandingsTable({ group }) {
             {index + 1}
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 min-w-0">
             <img
               src={`https://flagcdn.com/${team.code}.svg`}
               alt={team.name}
-              className="w-8"
+              className="w-8 flex-shrink-0"
             />
 
-            <span className="font-semibold">
+            <span
+              className="
+                font-semibold
+                truncate
+              "
+            >
               {team.name}
             </span>
           </div>
 
           <div>{team.points}</div>
-          <div>{team.played}</div>
-          <div>{team.won}</div>
-          <div>{team.draw}</div>
-          <div>{team.lost}</div>
-          <div>{team.gf}</div>
-          <div>{team.diff}</div>
+
+          <div className="hidden md:block">{team.played}</div>
+          <div className="hidden md:block">{team.won}</div>
+          <div className="hidden md:block">{team.draw}</div>
+          <div className="hidden md:block">{team.lost}</div>
+          <div className="hidden md:block">{team.gf}</div>
+          <div className="hidden md:block">{team.diff}</div>
         </div>
       ))}
     </div>
