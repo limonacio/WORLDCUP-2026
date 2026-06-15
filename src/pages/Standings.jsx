@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 import { groups } from '../data/groups'
-const calculatedGroups = calculateStandings(groups)
 import StandingsTable from '../components/StandingsTable'
 import { calculateStandings } from '../utils/calculateStandings'
 
+
+const calculatedGroups = calculateStandings(groups)
 
 
 
