@@ -1,4 +1,15 @@
+import { results } from '../data/results'
+
 function MatchCard({ match }) {
+
+  const result = results.find(
+    (r) =>
+      r.home === match.home &&
+      r.away === match.away
+  )
+
+  const hasResult = !!result
+
   return (
     <div className="bg-slate-800 rounded-xl border border-slate-700 overflow-hidden">
 
@@ -24,15 +35,15 @@ function MatchCard({ match }) {
       {/* PARTIDO */}
       <div className="px-6 py-8">
 
-        <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-4">
+        <div className="flex items-center justify-center gap-6">
 
           {/* LOCAL */}
-          <div className="flex items-center justify-end gap-3">
+          <div className="flex flex-col items-center text-center flex-1">
 
             <img
               src={`https://flagcdn.com/w40/${match.homeFlag}.png`}
               alt={match.home}
-              className="w-8 h-6 rounded-sm"
+              className="w-10 h-8 rounded-sm mb-2"
             />
 
             <span
@@ -40,11 +51,8 @@ function MatchCard({ match }) {
                 font-bold
                 text-base
                 md:text-2xl
-                text-right
                 leading-tight
                 break-words
-                max-w-[90px]
-                md:max-w-none
               "
             >
               {match.home}
@@ -52,27 +60,34 @@ function MatchCard({ match }) {
 
           </div>
 
-          {/* VS */}
-            <div
-              className="
-                text-cyan-400
-                font-bold
-                text-lg
-                md:text-xl
-                px-1
-                md:px-2
-              "
-              >
-              VS
-            </div>
+          {/* RESULTADO */}
+          <div className="text-center min-w-[90px]">
+
+            {hasResult ? (
+              <>
+                <div className="text-cyan-400 font-bold text-3xl md:text-4xl">
+                  {result.homeGoals} - {result.awayGoals}
+                </div>
+
+                <div className="text-green-400 text-xs font-bold mt-1">
+                  FINAL
+                </div>
+              </>
+            ) : (
+              <div className="text-cyan-400 font-bold text-3xl">
+                VS
+              </div>
+            )}
+
+          </div>
 
           {/* VISITANTE */}
-          <div className="flex items-center justify-start gap-3">
+          <div className="flex flex-col items-center text-center flex-1">
 
             <img
               src={`https://flagcdn.com/w40/${match.awayFlag}.png`}
               alt={match.away}
-              className="w-8 h-6 rounded-sm"
+              className="w-10 h-8 rounded-sm mb-2"
             />
 
             <span
@@ -80,11 +95,8 @@ function MatchCard({ match }) {
                 font-bold
                 text-base
                 md:text-2xl
-                text-left
                 leading-tight
                 break-words
-                max-w-[90px]
-                md:max-w-none
               "
             >
               {match.away}

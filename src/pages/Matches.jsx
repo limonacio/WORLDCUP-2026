@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { matches } from '../data/matches'
+import { results } from '../data/results'
 import MatchCard from '../components/MatchCard'
 
 function Matches() {
@@ -21,7 +22,16 @@ function Matches() {
     return matchesGroup && matchesSearch
   })
 
-  const nextMatch = matches[0]
+  const nextMatch =
+  matches.find((match) => {
+    const played = results.find(
+      (result) =>
+        result.home === match.home &&
+        result.away === match.away
+    )
+
+    return !played
+  }) || matches[0]
 
   const matchesByDate = filteredMatches.reduce((acc, match) => {
     if (!acc[match.date]) {

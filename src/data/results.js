@@ -15,7 +15,7 @@ export const results = [
 
   {
     home: 'Canada',
-    away: 'Bosnia',
+    away: 'Bosnia & Herzegovina',
     homeGoals: 1,
     awayGoals: 1,
   },

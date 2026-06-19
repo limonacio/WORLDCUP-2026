@@ -16,18 +16,41 @@ function Standings() {
         World Cup Standings
       </h1>
 
-      {/* CARDS SUPERIORES */}
+      
+
+      {/* TABLAS DE POSICIONES */}
 
       <div
         className="
-          max-w-5xl
-          mx-auto
           grid
-          md:grid-cols-3
-          gap-4
-          mb-12
+          grid-cols-1
+          xl:grid-cols-2
+          gap-6
         "
       >
+        {calculatedGroups.map((group) => (
+          <StandingsTable
+            key={group.group}
+            group={group}
+          />
+        ))}
+      </div>
+
+
+
+{/* CARDS SUPERIORES */}
+
+      <div
+  className="
+    max-w-5xl
+    mx-auto
+    grid
+    md:grid-cols-3
+    gap-4
+    mt-12
+    mb-12
+  "
+>
 
         {/* TEAMS */}
 
@@ -126,23 +149,6 @@ function Standings() {
 
       </div>
 
-      {/* TABLAS DE POSICIONES */}
-
-      <div
-        className="
-          grid
-          grid-cols-1
-          xl:grid-cols-2
-          gap-6
-        "
-      >
-        {calculatedGroups.map((group) => (
-          <StandingsTable
-            key={group.group}
-            group={group}
-          />
-        ))}
-      </div>
 
     </div>
   )
