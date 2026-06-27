@@ -3,15 +3,19 @@ import { groups } from '../data/groups'
 import StandingsTable from '../components/StandingsTable'
 import { calculateStandings } from '../utils/calculateStandings'
 
+
 const calculatedGroups = calculateStandings(groups)
 
 function Standings() {
   return (
     <div className="p-10">
 
-      <h1 className="text-5xl font-light text-center mb-10">
-        World Cup Standings
-      </h1>
+      <Link to="/" className="block text-center mb-10 no-underline group cursor-pointer">
+        <div className="text-yellow-400/70 text-xs tracking-[8px] font-bold mb-1">FIFA WORLD CUP 2026™</div>
+          <h1 className="text-4xl md:text-5xl font-black text-white tracking-wide group-hover:text-yellow-400/60 transition-colors">
+            STANDINGS
+          </h1>
+      </Link>
 
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
         {calculatedGroups.map((group) => (

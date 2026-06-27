@@ -1,5 +1,7 @@
 import { bracketLeft, bracketRight } from '../data/knockout'
 import trophyImg from '../assets/trophy_cutout.png'
+import { Link } from 'react-router-dom'
+
 
 /* ─── Animated trophy center ──────────────────────────────────────── */
 function TrophyCenter() {
@@ -232,11 +234,12 @@ function Knockout() {
 
       {/* HEADER */}
       <div className="text-center pt-10 pb-6 px-4">
-        <div className="text-yellow-400/70 text-xs tracking-[8px] font-bold mb-2">FIFA WORLD CUP 2026™</div>
-        <h1 className="text-4xl md:text-5xl font-black text-white tracking-wide mb-2" style={{ textShadow: '0 0 30px rgba(251,191,36,0.3)' }}>
-          KNOCKOUT STAGE
-        </h1>
-        <div className="text-slate-400 text-sm tracking-[4px]">ETAPA ELIMINATORIA</div>
+        <Link to="/" className="block text-center no-underline group cursor-pointer mb-2">
+          <div className="text-yellow-400/70 text-xs tracking-[8px] font-bold mb-2">FIFA WORLD CUP 2026™</div>
+          <h1 className="text-4xl md:text-5xl font-black text-white tracking-wide group-hover:text-yellow-400/60 transition-colors" style={{ textShadow: '0 0 30px rgba(251,191,36,0.3)' }}>
+            KNOCKOUT STAGE
+          </h1>
+        </Link>
         <div className="flex justify-center gap-6 mt-5">
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 rounded-sm bg-yellow-400/60 border border-yellow-400" />
