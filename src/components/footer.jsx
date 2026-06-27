@@ -11,7 +11,7 @@ function Footer() {
         mt-20
       "
     >
-      <p>© 2026 Z SPORTS</p>
+      <p>© 2026 ZETA-SPORTS</p>
 
       <p className="mt-1 text-slate-600">
         ® Tincho Limonacio Dev

@@ -96,11 +96,11 @@ function Navbar() {
           to="/knockout"
           className={({ isActive }) =>
             isActive
-              ? 'text-cyan-400 font-bold drop-shadow-[0_0_8px_rgba(34,211,238,0.8)] transition-all duration-300'
-              : 'text-white transition-all duration-300 hover:text-cyan-400 hover:drop-shadow-[0_0_8px_rgba(34,211,238,0.8)]'
+              ? 'text-yellow-400 font-bold drop-shadow-[0_0_8px_rgba(250,204,21,0.8)] transition-all duration-300'
+              : 'text-yellow-300/80 transition-all duration-300 hover:text-yellow-400 hover:drop-shadow-[0_0_8px_rgba(250,204,21,0.8)]'
           }
         >
-          Knockout
+          🏆 Bracket
         </NavLink>
       </div>
     </nav>

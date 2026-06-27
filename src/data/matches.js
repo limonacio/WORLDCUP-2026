@@ -1,5 +1,9 @@
+// FIFA World Cup 2026 — full group stage fixture list
+// Updated: 26 Jun 2026
+// Fields: homeScore / awayScore added for finished matches
+
 export const matches = [
-  // JUNE 11
+  // ── JUNE 11 ────────────────────────────────────────────────────
   {
     home: 'Mexico',
     away: 'South Africa',
@@ -10,6 +14,10 @@ export const matches = [
     kickoffArgentina: '4:00 PM',
     datetime: '2026-06-11T16:00:00',
     city: 'CDMX',
+    stadium: 'Estadio Azteca',
+    status: 'Finished',
+    homeScore: 2,
+    awayScore: 0,
   },
   {
     home: 'South Korea',
@@ -23,9 +31,12 @@ export const matches = [
     datetime: '2026-06-11T23:00:00',
     city: 'Guadalajara',
     stadium: 'Akron',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 2,
+    awayScore: 1,
   },
-  // JUNE 12
+
+  // ── JUNE 12 ────────────────────────────────────────────────────
   {
     home: 'Canada',
     away: 'Bosnia & Herzegovina',
@@ -38,7 +49,9 @@ export const matches = [
     datetime: '2026-06-12T16:00:00',
     city: 'Toronto',
     stadium: 'BMO Field',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 1,
+    awayScore: 1,
   },
   {
     home: 'United States',
@@ -52,9 +65,12 @@ export const matches = [
     datetime: '2026-06-12T22:00:00',
     city: 'Los Angeles',
     stadium: 'SoFi Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 4,
+    awayScore: 1,
   },
-  // JUNE 13
+
+  // ── JUNE 13 ────────────────────────────────────────────────────
   {
     home: 'Qatar',
     away: 'Switzerland',
@@ -66,8 +82,10 @@ export const matches = [
     kickoffArgentina: '4:00 PM',
     datetime: '2026-06-13T16:00:00',
     city: 'San Francisco',
-    stadium: 'Levi’s Stadium',
-    status: 'Scheduled',
+    stadium: "Levi's Stadium",
+    status: 'Finished',
+    homeScore: 1,
+    awayScore: 1,
   },
   {
     home: 'Brazil',
@@ -81,7 +99,9 @@ export const matches = [
     datetime: '2026-06-13T19:00:00',
     city: 'New Jersey',
     stadium: 'MetLife Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 1,
+    awayScore: 1,
   },
   {
     home: 'Haiti',
@@ -95,7 +115,9 @@ export const matches = [
     datetime: '2026-06-13T22:00:00',
     city: 'Boston',
     stadium: 'Gillette Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 0,
+    awayScore: 1,
   },
   {
     home: 'Australia',
@@ -109,9 +131,12 @@ export const matches = [
     datetime: '2026-06-13T01:00:00',
     city: 'Vancouver',
     stadium: 'BC Place',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 2,
+    awayScore: 0,
   },
-  // JUNE 14
+
+  // ── JUNE 14 ────────────────────────────────────────────────────
   {
     home: 'Germany',
     away: 'Curacao',
@@ -124,7 +149,9 @@ export const matches = [
     datetime: '2026-06-14T14:00:00',
     city: 'Houston',
     stadium: 'NRG Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 7,
+    awayScore: 1,
   },
   {
     home: 'Netherlands',
@@ -138,7 +165,9 @@ export const matches = [
     datetime: '2026-06-14T17:00:00',
     city: 'Dallas',
     stadium: 'AT&T Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 2,
+    awayScore: 2,
   },
   {
     home: 'Ivory Coast',
@@ -152,7 +181,9 @@ export const matches = [
     datetime: '2026-06-14T20:00:00',
     city: 'Philadelphia',
     stadium: 'Lincoln Financial Field',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 1,
+    awayScore: 0,
   },
   {
     home: 'Sweden',
@@ -166,9 +197,12 @@ export const matches = [
     datetime: '2026-06-14T23:00:00',
     city: 'Monterrey',
     stadium: 'BBVA',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 5,
+    awayScore: 1,
   },
-  // JUNE 15
+
+  // ── JUNE 15 ────────────────────────────────────────────────────
   {
     home: 'Spain',
     away: 'Cape Verde',
@@ -181,7 +215,9 @@ export const matches = [
     datetime: '2026-06-15T13:00:00',
     city: 'Atlanta',
     stadium: 'Mercedes-Benz Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 0,
+    awayScore: 0,
   },
   {
     home: 'Belgium',
@@ -195,7 +231,9 @@ export const matches = [
     datetime: '2026-06-15T16:00:00',
     city: 'Seattle',
     stadium: 'Lumen Field',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 1,
+    awayScore: 1,
   },
   {
     home: 'Saudi Arabia',
@@ -209,7 +247,9 @@ export const matches = [
     datetime: '2026-06-15T19:00:00',
     city: 'Miami',
     stadium: 'Hard Rock Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 1,
+    awayScore: 1,
   },
   {
     home: 'Iran',
@@ -223,9 +263,12 @@ export const matches = [
     datetime: '2026-06-15T22:00:00',
     city: 'Los Angeles',
     stadium: 'SoFi Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 2,
+    awayScore: 2,
   },
-  // JUNE 16
+
+  // ── JUNE 16 ────────────────────────────────────────────────────
   {
     home: 'France',
     away: 'Senegal',
@@ -238,7 +281,9 @@ export const matches = [
     datetime: '2026-06-16T16:00:00',
     city: 'New Jersey',
     stadium: 'MetLife Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 3,
+    awayScore: 1,
   },
   {
     home: 'Iraq',
@@ -252,7 +297,9 @@ export const matches = [
     datetime: '2026-06-16T19:00:00',
     city: 'Boston',
     stadium: 'Gillette Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 1,
+    awayScore: 4,
   },
   {
     home: 'Argentina',
@@ -266,7 +313,9 @@ export const matches = [
     datetime: '2026-06-16T22:00:00',
     city: 'Kansas City',
     stadium: 'GEHA Field at Arrowhead Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 3,
+    awayScore: 0,
   },
   {
     home: 'Austria',
@@ -279,10 +328,13 @@ export const matches = [
     kickoffArgentina: '1:00 AM',
     datetime: '2026-06-16T01:00:00',
     city: 'San Francisco',
-    stadium: 'Levi’s Stadium',
-    status: 'Scheduled',
+    stadium: "Levi's Stadium",
+    status: 'Finished',
+    homeScore: 3,
+    awayScore: 1,
   },
-  // JUNE 17
+
+  // ── JUNE 17 ────────────────────────────────────────────────────
   {
     home: 'Portugal',
     away: 'DR Congo',
@@ -295,7 +347,9 @@ export const matches = [
     datetime: '2026-06-17T14:00:00',
     city: 'Houston',
     stadium: 'NRG Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 1,
+    awayScore: 1,
   },
   {
     home: 'England',
@@ -309,7 +363,9 @@ export const matches = [
     datetime: '2026-06-17T17:00:00',
     city: 'Dallas',
     stadium: 'AT&T Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 4,
+    awayScore: 2,
   },
   {
     home: 'Ghana',
@@ -323,7 +379,9 @@ export const matches = [
     datetime: '2026-06-17T20:00:00',
     city: 'Toronto',
     stadium: 'BMO Field',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 1,
+    awayScore: 0,
   },
   {
     home: 'Uzbekistan',
@@ -336,10 +394,13 @@ export const matches = [
     kickoffArgentina: '11:00 PM',
     datetime: '2026-06-17T23:00:00',
     city: 'CDMX',
-    stadium: 'Ciudad de Mexico',
-    status: 'Scheduled',
+    stadium: 'Estadio Azteca',
+    status: 'Finished',
+    homeScore: 1,
+    awayScore: 3,
   },
-  // JUNE 18
+
+  // ── JUNE 18 ────────────────────────────────────────────────────
   {
     home: 'Czech Republic',
     away: 'South Africa',
@@ -352,7 +413,9 @@ export const matches = [
     datetime: '2026-06-18T13:00:00',
     city: 'Atlanta',
     stadium: 'Mercedes-Benz Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 1,
+    awayScore: 1,
   },
   {
     home: 'Switzerland',
@@ -366,7 +429,9 @@ export const matches = [
     datetime: '2026-06-18T16:00:00',
     city: 'Los Angeles',
     stadium: 'SoFi Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 4,
+    awayScore: 1,
   },
   {
     home: 'Canada',
@@ -380,7 +445,9 @@ export const matches = [
     datetime: '2026-06-18T19:00:00',
     city: 'Vancouver',
     stadium: 'BC Place',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 6,
+    awayScore: 0,
   },
   {
     home: 'Mexico',
@@ -394,9 +461,12 @@ export const matches = [
     datetime: '2026-06-18T22:00:00',
     city: 'Guadalajara',
     stadium: 'Akron',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 1,
+    awayScore: 0,
   },
-  // JUNE 19
+
+  // ── JUNE 19 ────────────────────────────────────────────────────
   {
     home: 'United States',
     away: 'Australia',
@@ -409,7 +479,9 @@ export const matches = [
     datetime: '2026-06-19T16:00:00',
     city: 'Seattle',
     stadium: 'Lumen Field',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 2,
+    awayScore: 0,
   },
   {
     home: 'Scotland',
@@ -423,7 +495,9 @@ export const matches = [
     datetime: '2026-06-19T19:00:00',
     city: 'Boston',
     stadium: 'Gillette Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 0,
+    awayScore: 1,
   },
   {
     home: 'Brazil',
@@ -437,7 +511,9 @@ export const matches = [
     datetime: '2026-06-19T22:00:00',
     city: 'Philadelphia',
     stadium: 'Lincoln Financial Field',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 3,
+    awayScore: 0,
   },
   {
     home: 'Turkiye',
@@ -450,10 +526,13 @@ export const matches = [
     kickoffArgentina: '1:00 AM',
     datetime: '2026-06-19T01:00:00',
     city: 'San Francisco',
-    stadium: 'Levi’s Stadium',
-    status: 'Scheduled',
+    stadium: "Levi's Stadium",
+    status: 'Finished',
+    homeScore: 0,
+    awayScore: 1,
   },
-  // JUNE 20
+
+  // ── JUNE 20 ────────────────────────────────────────────────────
   {
     home: 'Netherlands',
     away: 'Sweden',
@@ -466,7 +545,9 @@ export const matches = [
     datetime: '2026-06-20T14:00:00',
     city: 'Houston',
     stadium: 'NRG Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 5,
+    awayScore: 1,
   },
   {
     home: 'Germany',
@@ -480,7 +561,9 @@ export const matches = [
     datetime: '2026-06-20T17:00:00',
     city: 'Toronto',
     stadium: 'BMO Field',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 2,
+    awayScore: 1,
   },
   {
     home: 'Ecuador',
@@ -494,7 +577,9 @@ export const matches = [
     datetime: '2026-06-20T23:00:00',
     city: 'Kansas City',
     stadium: 'GEHA Field at Arrowhead Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 0,
+    awayScore: 0,
   },
   {
     home: 'Tunisia',
@@ -508,9 +593,12 @@ export const matches = [
     datetime: '2026-06-20T01:00:00',
     city: 'Monterrey',
     stadium: 'BBVA',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 0,
+    awayScore: 4,
   },
-  // JUNE 21
+
+  // ── JUNE 21 ────────────────────────────────────────────────────
   {
     home: 'Spain',
     away: 'Saudi Arabia',
@@ -523,7 +611,9 @@ export const matches = [
     datetime: '2026-06-21T13:00:00',
     city: 'Atlanta',
     stadium: 'Mercedes-Benz Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 4,
+    awayScore: 0,
   },
   {
     home: 'Belgium',
@@ -537,7 +627,9 @@ export const matches = [
     datetime: '2026-06-21T16:00:00',
     city: 'Los Angeles',
     stadium: 'SoFi Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 0,
+    awayScore: 0,
   },
   {
     home: 'Uruguay',
@@ -551,7 +643,9 @@ export const matches = [
     datetime: '2026-06-21T19:00:00',
     city: 'Miami',
     stadium: 'Hard Rock Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 2,
+    awayScore: 2,
   },
   {
     home: 'New Zealand',
@@ -565,9 +659,12 @@ export const matches = [
     datetime: '2026-06-21T22:00:00',
     city: 'Vancouver',
     stadium: 'BC Place',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 1,
+    awayScore: 3,
   },
-  // JUNE 22
+
+  // ── JUNE 22 ────────────────────────────────────────────────────
   {
     home: 'Argentina',
     away: 'Austria',
@@ -580,7 +677,9 @@ export const matches = [
     datetime: '2026-06-22T14:00:00',
     city: 'Dallas',
     stadium: 'AT&T Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 2,
+    awayScore: 0,
   },
   {
     home: 'France',
@@ -594,7 +693,9 @@ export const matches = [
     datetime: '2026-06-22T18:00:00',
     city: 'Philadelphia',
     stadium: 'Lincoln Financial Field',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 3,
+    awayScore: 0,
   },
   {
     home: 'Norway',
@@ -608,7 +709,9 @@ export const matches = [
     datetime: '2026-06-22T21:00:00',
     city: 'New Jersey',
     stadium: 'MetLife Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 3,
+    awayScore: 2,
   },
   {
     home: 'Jordan',
@@ -621,10 +724,13 @@ export const matches = [
     kickoffArgentina: '12:00 AM',
     datetime: '2026-06-22T00:00:00',
     city: 'San Francisco',
-    stadium: 'Levi’s Stadium',
-    status: 'Scheduled',
+    stadium: "Levi's Stadium",
+    status: 'Finished',
+    homeScore: 1,
+    awayScore: 2,
   },
-  // JUNE 23
+
+  // ── JUNE 23 ────────────────────────────────────────────────────
   {
     home: 'Portugal',
     away: 'Uzbekistan',
@@ -637,7 +743,9 @@ export const matches = [
     datetime: '2026-06-23T14:00:00',
     city: 'Houston',
     stadium: 'NRG Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 5,
+    awayScore: 0,
   },
   {
     home: 'England',
@@ -651,7 +759,9 @@ export const matches = [
     datetime: '2026-06-23T17:00:00',
     city: 'Boston',
     stadium: 'Gillette Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 0,
+    awayScore: 0,
   },
   {
     home: 'Panama',
@@ -665,7 +775,9 @@ export const matches = [
     datetime: '2026-06-23T20:00:00',
     city: 'Toronto',
     stadium: 'BMO Field',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 0,
+    awayScore: 1,
   },
   {
     home: 'Colombia',
@@ -679,9 +791,12 @@ export const matches = [
     datetime: '2026-06-23T23:00:00',
     city: 'Guadalajara',
     stadium: 'Akron',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 1,
+    awayScore: 0,
   },
-  // JUNE 24
+
+  // ── JUNE 24 ────────────────────────────────────────────────────
   {
     home: 'Switzerland',
     away: 'Canada',
@@ -694,7 +809,9 @@ export const matches = [
     datetime: '2026-06-24T16:00:00',
     city: 'Vancouver',
     stadium: 'BC Place',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 2,
+    awayScore: 1,
   },
   {
     home: 'Bosnia & Herzegovina',
@@ -708,7 +825,9 @@ export const matches = [
     datetime: '2026-06-24T16:00:00',
     city: 'Seattle',
     stadium: 'Lumen Field',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 3,
+    awayScore: 1,
   },
   {
     home: 'Scotland',
@@ -722,7 +841,9 @@ export const matches = [
     datetime: '2026-06-24T19:00:00',
     city: 'Miami',
     stadium: 'Hard Rock Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 0,
+    awayScore: 3,
   },
   {
     home: 'Morocco',
@@ -736,7 +857,9 @@ export const matches = [
     datetime: '2026-06-24T19:00:00',
     city: 'Atlanta',
     stadium: 'Mercedes-Benz Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 4,
+    awayScore: 2,
   },
   {
     home: 'Czech Republic',
@@ -749,8 +872,10 @@ export const matches = [
     kickoffArgentina: '10:00 PM',
     datetime: '2026-06-24T22:00:00',
     city: 'CDMX',
-    stadium: 'Ciudad de Mexico',
-    status: 'Scheduled',
+    stadium: 'Estadio Azteca',
+    status: 'Finished',
+    homeScore: 0,
+    awayScore: 3,
   },
   {
     home: 'South Africa',
@@ -764,9 +889,12 @@ export const matches = [
     datetime: '2026-06-24T22:00:00',
     city: 'Monterrey',
     stadium: 'BBVA',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 1,
+    awayScore: 0,
   },
-  // JUNE 25
+
+  // ── JUNE 25 ────────────────────────────────────────────────────
   {
     home: 'Curacao',
     away: 'Ivory Coast',
@@ -779,7 +907,9 @@ export const matches = [
     datetime: '2026-06-25T17:00:00',
     city: 'Philadelphia',
     stadium: 'Lincoln Financial Field',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 0,
+    awayScore: 2,
   },
   {
     home: 'Ecuador',
@@ -793,7 +923,9 @@ export const matches = [
     datetime: '2026-06-25T17:00:00',
     city: 'New Jersey',
     stadium: 'MetLife Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 2,
+    awayScore: 1,
   },
   {
     home: 'Japan',
@@ -807,7 +939,9 @@ export const matches = [
     datetime: '2026-06-25T20:00:00',
     city: 'Dallas',
     stadium: 'AT&T Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 1,
+    awayScore: 1,
   },
   {
     home: 'Tunisia',
@@ -821,7 +955,9 @@ export const matches = [
     datetime: '2026-06-25T20:00:00',
     city: 'Kansas City',
     stadium: 'GEHA Field at Arrowhead Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 1,
+    awayScore: 3,
   },
   {
     home: 'Turkiye',
@@ -835,7 +971,9 @@ export const matches = [
     datetime: '2026-06-25T23:00:00',
     city: 'Los Angeles',
     stadium: 'SoFi Stadium',
-    status: 'Scheduled',
+    status: 'Finished',
+    homeScore: 3,
+    awayScore: 2,
   },
   {
     home: 'Paraguay',
@@ -848,10 +986,13 @@ export const matches = [
     kickoffArgentina: '11:00 PM',
     datetime: '2026-06-25T23:00:00',
     city: 'San Francisco',
-    stadium: 'Levi’s Stadium',
-    status: 'Scheduled',
+    stadium: "Levi's Stadium",
+    status: 'Finished',
+    homeScore: 0,
+    awayScore: 0,
   },
-  // JUNE 26
+
+  // ── JUNE 26 — Groups G, H, I (Matchday 3) ──────────────────────
   {
     home: 'Norway',
     away: 'France',
@@ -936,7 +1077,8 @@ export const matches = [
     stadium: 'BC Place',
     status: 'Scheduled',
   },
-  // JUNE 27
+
+  // ── JUNE 27 — Groups J, K, L (Matchday 3) ──────────────────────
   {
     home: 'Panama',
     away: 'England',
@@ -1021,4 +1163,4 @@ export const matches = [
     stadium: 'AT&T Stadium',
     status: 'Scheduled',
   },
-];
+]

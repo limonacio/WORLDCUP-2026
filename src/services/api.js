@@ -1,27 +1,13 @@
-// src/services/api.js
+const API_KEY = import.meta.env.VITE_THESPORTSDB_API_KEY
 
-import { matches } from '../data/matches'
-import { groups } from '../data/groups'
+    console.log("API KEY:", API_KEY)
 
 export async function getMatches() {
-  return matches
-}
+  const response = await fetch(
+    `https://www.thesportsdb.com/api/v1/json/${API_KEY}/eventsseason.php?id=4429&s=2026`
+  )
 
-export async function getGroups() {
-  return groups
-}
+  const data = await response.json()
 
-export async function getNextMatch() {
-  const allMatches = await getMatches()
-
-  const now = new Date()
-
-  const nextMatch =
-    allMatches.find(
-      (match) =>
-        match.datetime &&
-        new Date(match.datetime) > now
-    ) || allMatches[0]
-
-  return nextMatch
+  return data.events || []
 }
