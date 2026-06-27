@@ -59,7 +59,7 @@ function TBDSlot({ label }) {
   return (
     <div className="bracket-card bracket-tbd">
       <div className="text-xs text-yellow-500/60 font-bold tracking-widest mb-1">{label || 'TBD'}</div>
-      <div className="text-slate-500 text-xs">Por definirse</div>
+      <div className="text-slate-500 text-xs">To be determined</div>
     </div>
   )
 }
