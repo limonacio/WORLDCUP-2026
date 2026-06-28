@@ -68,23 +68,25 @@ function Matches() {
 
   // ─────────────────────────────────────────────────────────────────────────
   return (
-    <div className="p-6">
+    <div className="p-10">
 
       {/* PAGE TITLE */}
       <Link to="/" className="block text-center no-underline group cursor-pointer mb-10">
-        <div className="text-cyan-400/60 text-xs tracking-[8px] font-bold mb-1">
+        <div className="text-yellow-400/70 text-xs tracking-[8px] font-bold mb-2">
           FIFA WORLD CUP 2026™
         </div>
         <h1
           className="
             text-5xl
-            font-light
-            group-hover:text-cyan-300
+            font-bold
+            text-white
+            tracking-wider
+            group-hover:text-yellow-400
             transition-colors
             duration-300
           "
         >
-          Fixtures
+          FIXTURES
         </h1>
       </Link>
 
