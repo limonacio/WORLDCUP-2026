@@ -39,6 +39,12 @@ function Home() {
           .slice(0, 3)
       : []
 
+  const groupStageOver = enrichedMatches.every((m) => isPast(m))
+  const champion = null // ← cuando haya campeón, ponés acá: 'Argentina'
+  const nextMatchLink = groupStageOver ? '/knockout' : '/matches'
+
+
+
   // ── 2. Después el countdown (targetDate ya existe) ────
   const calculateTimeLeft = () => {
     const difference = targetDate - new Date()
@@ -201,40 +207,76 @@ function Home() {
         </div>
       </div>
 
-      {/* ── NEXT MATCH ───────────────────────────────────── */}
-      <div className="relative z-10 px-5 max-w-2xl mx-auto w-full mb-20">
-        <div className="text-cyan-400 text-sm font-bold tracking-[3px] mb-4 text-center">
-          NEXT MATCH
-        </div>
-        <div className="bg-slate-900/70 border border-cyan-500/30 rounded-2xl p-8 backdrop-blur-sm shadow-lg shadow-cyan-500/10">
-          <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-6">
-            <div className="flex flex-col items-center">
-              <img src={`https://flagcdn.com/${nextMatch.homeFlag}.svg`} alt={nextMatch.home} className="w-16 mb-3" />
-              <h2 className="text-2xl md:text-3xl font-bold text-center">{nextMatch.home}</h2>
-            </div>
-            <div className="text-cyan-400 text-4xl md:text-5xl font-bold">VS</div>
-            <div className="flex flex-col items-center">
-              <img src={`https://flagcdn.com/${nextMatch.awayFlag}.svg`} alt={nextMatch.away} className="w-16 mb-3" />
-              <h2 className="text-2xl md:text-3xl font-bold text-center">{nextMatch.away}</h2>
-            </div>
-          </div>
+      {/* ── NEXT MATCH / BRACKET / CHAMPION ───────────────── */}
+<div className="relative z-10 px-5 max-w-2xl mx-auto w-full mb-20">
 
-          <div className="text-slate-300 text-lg text-center">{nextMatch.date}</div>
-          <div className="text-cyan-400 font-semibold mt-2 text-center">🕒 {nextMatch.kickoffArgentina}</div>
-          <div className="text-slate-400 mt-1 text-center mb-6">📍 {nextMatch.city}</div>
-
-          {/* Countdown */}
-          <div className="flex justify-center gap-8">
-            {[['days', 'DAYS'], ['hours', 'HRS'], ['minutes', 'MIN'], ['seconds', 'SEC']].map(([key, label]) => (
-              <div key={key} className="text-center">
-                <div className="text-cyan-400 text-3xl font-bold">{timeLeft[key]}</div>
-                <div className="text-xs text-slate-400 tracking-wider">{label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
+  {champion ? (
+    /* ── CAMPEÓN ── */
+    <Link to="/knockout" className="block no-underline group">
+      <div className="text-yellow-400 text-sm font-bold tracking-[3px] mb-4 text-center animate-pulse">
+        🏆 WORLD CHAMPION
       </div>
+      <div className="bg-yellow-950/40 border-2 border-yellow-500/60 rounded-2xl p-8 backdrop-blur-sm shadow-lg shadow-yellow-500/20 text-center group-hover:border-yellow-400 transition-all duration-300"
+        style={{ background: 'linear-gradient(135deg, rgba(20,14,0,0.8) 0%, rgba(60,40,0,0.8) 100%)' }}>
+        <img src={`https://flagcdn.com/w80/${enrichedMatches.find(m => m.home === champion || m.away === champion)?.homeFlag ?? ''}.png`}
+          alt={champion} className="w-24 mx-auto mb-4 rounded shadow-lg" />
+        <h2 className="text-4xl font-black text-yellow-400 mb-2">{champion}</h2>
+        <p className="text-yellow-200/70 text-sm">FIFA World Cup 2026 Champions</p>
+        <p className="text-yellow-400/50 text-xs mt-3">View Bracket →</p>
+      </div>
+    </Link>
 
+  ) : groupStageOver ? (
+    /* ── GRUPO TERMINADO → BRACKET ── */
+    <Link to="/knockout" className="block no-underline group">
+      <div className="text-yellow-400 text-sm font-bold tracking-[3px] mb-4 text-center">
+        🏆 KNOCKOUT STAGE
+      </div>
+      <div className="border-2 border-yellow-500/60 rounded-2xl p-8 backdrop-blur-sm shadow-lg shadow-yellow-500/20 text-center group-hover:border-yellow-400 transition-all duration-300"
+        style={{ background: 'linear-gradient(135deg, rgba(20,14,0,0.8) 0%, rgba(60,40,0,0.8) 100%)' }}>
+        <div className="text-6xl mb-4">🏆</div>
+        <h2 className="text-3xl font-black text-yellow-400 mb-2">Round of 16</h2>
+        <p className="text-yellow-200/70 text-sm">Group stage complete · View the bracket</p>
+        <p className="text-yellow-400/50 text-xs mt-3">View Bracket →</p>
+      </div>
+    </Link>
+
+  ) : (
+    /* ── PRÓXIMO PARTIDO ── */
+    <Link to={nextMatchLink} className="block no-underline group">
+      <div className="text-cyan-400 text-sm font-bold tracking-[3px] mb-4 text-center">
+        NEXT MATCH
+      </div>
+      <div className="bg-slate-900/70 border border-cyan-500/30 rounded-2xl p-8 backdrop-blur-sm shadow-lg shadow-cyan-500/10 group-hover:border-cyan-400 transition-all duration-300">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-6">
+          <div className="flex flex-col items-center">
+            <img src={`https://flagcdn.com/${nextMatch.homeFlag}.svg`} alt={nextMatch.home} className="w-16 mb-3" />
+            <h2 className="text-2xl md:text-3xl font-bold text-center">{nextMatch.home}</h2>
+          </div>
+          <div className="text-cyan-400 text-4xl md:text-5xl font-bold">VS</div>
+          <div className="flex flex-col items-center">
+            <img src={`https://flagcdn.com/${nextMatch.awayFlag}.svg`} alt={nextMatch.away} className="w-16 mb-3" />
+            <h2 className="text-2xl md:text-3xl font-bold text-center">{nextMatch.away}</h2>
+          </div>
+        </div>
+        <div className="text-slate-300 text-lg text-center">{nextMatch.date}</div>
+        <div className="text-cyan-400 font-semibold mt-2 text-center">🕒 {nextMatch.kickoffArgentina}</div>
+        <div className="text-slate-400 mt-1 text-center mb-6">📍 {nextMatch.city}</div>
+        <div className="flex justify-center gap-8">
+          {[['days', 'DAYS'], ['hours', 'HRS'], ['minutes', 'MIN'], ['seconds', 'SEC']].map(([key, label]) => (
+            <div key={key} className="text-center">
+              <div className="text-cyan-400 text-3xl font-bold">{timeLeft[key]}</div>
+              <div className="text-xs text-slate-400 tracking-wider">{label}</div>
+            </div>
+          ))}
+        </div>
+        <p className="text-slate-500 text-xs text-center mt-4">Ver partido →</p>
+      </div>
+    </Link>
+  )}
+</div>
+
+         
       {/* ── UPCOMING MATCHES ─────────────────────────────── */}
       {upcomingMatches.length > 0 && (
         <div className="relative z-10 px-5 max-w-5xl mx-auto w-full mb-16">
@@ -270,6 +312,7 @@ function Home() {
           </div>
         </div>
       )}
+      
 
       {/* ── FEATURED TEAMS ───────────────────────────────── */}
       <div className="relative z-10 px-5 max-w-6xl mx-auto w-full mb-20">
